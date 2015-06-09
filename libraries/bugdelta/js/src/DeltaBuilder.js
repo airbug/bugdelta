@@ -92,13 +92,13 @@ require('bugpack').context("*", function(bugpack) {
 
 
         //-------------------------------------------------------------------------------
-        // Initializer
+        // Init Methods
         //-------------------------------------------------------------------------------
 
         /**
-         * @private
+         *
          */
-        _initializer: function() {
+        init: function() {
             this._super();
             this.calculatorResolver.registerCalculatorForDataType("array", new ArrayCalculator(this));
             this.calculatorResolver.registerCalculatorForDataType("object", new ObjectCalculator(this));

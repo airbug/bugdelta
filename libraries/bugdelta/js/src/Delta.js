@@ -95,7 +95,7 @@ require('bugpack').context("*", function(bugpack) {
         },
 
         /**
-         * @returns {number}
+         * @return {number}
          */
         getChangeCount: function() {
             return this.deltaChangeList.getCount();
